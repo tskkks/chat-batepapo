@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat em Tempo Real</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    ul { list-style: none; padding: 0; }
+    li { padding: 8px; background: #f4f4f4; margin-bottom: 5px; border-radius: 4px; }
+    input { padding: 10px; border: 1px solid #ccc; width: calc(100% - 22px); border-radius: 4px; }
+    button { padding: 10px; background: #28a745; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>Chat em Tempo Real</h1>
+  <ul id="messages"></ul>
+  <form id="form" action="">
+    <input id="input" autocomplete="off" placeholder="Digite sua mensagem..." />
+    <button>Enviar</button>
+  </form>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
